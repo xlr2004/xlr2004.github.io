@@ -1,0 +1,683 @@
+<!DOCTYPE html><!--定义文件类型-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Welcome</title>
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+
+<!--Favicon-->
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="page-wrapper default-version">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <div class="page-background">
+        <div class="image-1"><img src="images/icons/shape/icon-1.png" alt=""></div>
+        <div class="image-7"><img src="images/icons/shape/icon-7.png" alt=""></div>
+        <canvas id="canvas"></canvas>
+    </div>
+    
+    <!-- Mobile menu -->
+    <div class="mobile-menu">
+        <div class="container">
+            <!--Nav Outer-->
+            <div class="nav-outer clearfix">
+                <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+                <!-- Main Menu -->
+                <nav class="main-menu">
+                    <div class="navbar-header">
+                        <!-- Toggle Button -->      
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    
+                    <div class="navbar-collapse collapse scroll-nav clearfix">
+                        <ul class="navigation clearfix">
+                            
+                            <li class="current"><a href="#home">主页</a></li>
+                            <li><a href="#about">关于我</a></li>
+                            <li><a href="#resume">履历</a></li>
+                            <li><a href="#services">技能</a></li>
+                            <li><a href="#work">工作日常</a></li>
+                            <li><a href="#blog">博客</a></li>
+                            <li><a href="#contact">与我联系</a></li>
+
+                         </ul>
+                    </div>
+                </nav>
+                <!-- Main Menu End-->                        
+            </div>
+            <!--Nav Outer End-->            
+        </div>
+    </div>
+ 	
+    <div class="card-outer">
+        <div class="scroll-box">
+            <div class="container" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
+                <div class="card-wrapper">
+                    <div class="author-info" style="background-image:url(images/background/3.jpg)">
+                        <div class="image"><img src="images/resource/user.jpg" alt=""></div>
+                        <div class="author">
+                            <h3>徐林睿</h3>
+                            <div class="designation">
+                                哈喽，我
+                                <div class="typing-title">
+                                    <p>喜欢<strong>没事设计个网页。</strong></p>
+                                    <p>喜欢<strong>没事搞点电路玩玩。</strong></p>
+                                    <p>也喜欢<strong>无聊的时候去参与各种运动。</strong></p>
+									<p>尤其喜欢<strong>F1和其他赛车活动。</strong></p>
+									<p>言归正传也是<strong>机械专业的带学生。</strong></p>
+									<p>总而言之<strong>兴趣爱好涉猎广泛。</strong></p>
+                                </div>
+                                <span class="typed-title"></span>
+                            </div>
+                        </div>
+                        <div class="link-btn"><!--按钮-->
+                            <!--按钮<a href="https://www.soujiz.com/" class="theme-btn btn-style-one">Download CV</a>-->
+                        </div>
+                        <ul class="social-icon-two">
+							<li><a href="images/QRcode/qq.png"><img src="images/icons/qq.svg" alt=""></a></li>
+                            <li><a href="images/QRcode/wechat.jpg"><img src="images/icons/wechat.svg" alt=""></a></li>
+                            <li><a href="https://www.zhihu.com/people/a22511"><img src="images/icons/zhihu.svg" alt=""></a></li>
+                            <li><a href="https://space.bilibili.com/385646915"><img src="images/icons/bili.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="card-inner-box">
+                        <header class="header wow fadeInLeft" data-wow-duration="1.5s">
+                            <ul class="main-menu">
+                                <li class="active home"><a class="logo" href="#home"><img src="images/logo.png" alt=""></a></li>
+                                <li><a href="#about"><i class="flaticon-social"></i>关于我</a></li>
+                                <li><a href="#resume"><i class="flaticon-curriculum"></i>履历</a></li>
+                                <li><a href="#services"><i class="flaticon-layers-1"></i>技能</a></li>
+                                <li><a href="#work"><i class="flaticon-tools"></i>工作日常</a></li>
+                                <li><a href="#blog"><i class="flaticon-blog"></i>博客</a></li>
+                                <li><a href="#contact"><i class="flaticon-send-mail"></i>与我联系-</a></li>
+                            </ul>
+                        </header>
+
+                        <!-- 第一页 -->
+                        <div class="card-home card-item active" id="home" style="background-image:url(images/background/1.jpg)">
+
+                            <div class="card-inner wow fadeInUp" data-wow-duration="2s">
+                                <div class="image"><img src="images/resource/user.jpg" alt=""></div>
+                                <div class="author">
+                                    <h3>徐林睿</h3><!--姓名-->
+                                    <div class="designation">
+                                        哈喽，我
+                                        <div class="typing-title"><!--第一页的显示形式：一个个显示后再删除显示下一个，循环播放-->
+                                            <p>喜欢<strong>没事设计个网页。</strong></p>
+                                    		<p>喜欢<strong>没事搞点电路玩玩。</strong></p>
+                                    		<p>也喜欢<strong>无聊的时候去参与各种运动。</strong></p>
+											<p>尤其喜欢<strong>F1和其他赛车活动。</strong></p>
+											<p>言归正传也是<strong>机械专业的带学生。</strong></p>
+											<p>总而言之<strong>兴趣爱好涉猎广泛。</strong></p>
+                                        </div>
+                                        <span class="typed-title"></span>
+                                    </div>
+                                </div>
+                                <div class="text">欢迎来到我的主页，随便看看吧</div><!--主页显示的内容-->
+								<div class="text">以积极的态度面对每一天的生活！<br>ps：当你想要放弃的时候想想当初为什么坚持到这里</div><!--主页显示的内容-->
+                                <div class="link-btn"><!--俩按钮-->
+                                    <!--<a href="#" class="theme-btn btn-style-one">Download CV</a>-->
+                                    <!--<a href="#" class="theme-btn btn-style-two">Hire Me</a>--><!--需要的时候再放出来-->
+                                </div>
+                                <ul class="social-icon-two">
+                                    <li><a href="images/QRcode/qq.png"><img src="images/icons/qq.svg" alt=""></a></li>
+                                    <li><a href="images/QRcode/wechat.jpg"><img src="images/icons/wechat.svg" alt=""></a></li>
+                                    <li><a href="https://www.zhihu.com/people/a22511"><img src="images/icons/zhihu.svg" alt=""></a></li>
+                                    <li><a href="https://space.bilibili.com/385646915"><img src="images/icons/bili.svg" alt=""></a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <!-- end item -->
+
+                        <!-- card item   关于我-->
+                        <div class="card-about card-item" id="about" style="background-image:url(images/background/2.jpg)">
+                            <div class="card-inner">
+                                <h4 class="title">有关于我</h4><!--关于页面-->
+                                <div class="text">对于我而言，涉猎广泛无疑是最好的代名词。我热爱探索一切新的事物，也一直在热爱的领域上前进。我经常会一个人在路上，享受孤寂带给我的体验。</div>
+								<p><strong>生如逆旅 一苇以航</strong></p>
+                                <div class="info-list">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <ul class="list-style-one"><!--个人基本信息-->
+                                                <li><strong>姓名：</strong>徐林睿</li>
+                                                <li><strong>电话：</strong>15964207081</li>
+                                                <li><strong>地址：</strong>山东省青岛市/山东省济南市</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul class="list-style-one">
+                                                <li><strong>邮箱：</strong>xlinrui2004@163.com</li>
+                                                <li><strong>职业：</strong>学生</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>                                    
+                                <h4 class="title">我的技能</h4><!--技能百分比图-->
+                                <div class="row">
+                                    <!-- 百分比图1 -->
+                                    <div class="skill-block col-md-3 col-sm-4 col-xs-6">
+                                        <div class="inner-box">
+                                            <div class="graph-outer">
+                                                <input type="text" class="dial" data-fgColor="#9147ff" data-bgColor="#f5f5f5" data-width="90" data-height="90" data-linecap="normal"  value="40">
+                                                <div class="inner-text count-box"><span class="count-text" data-stop="40" data-speed="2000"></span>%</div>
+                                            </div>
+                                            <h3>HTML</h3>
+                                        </div>
+                                    </div>
+
+                                    <!-- 百分比2 -->
+                                    <div class="skill-block col-md-3 col-sm-4 col-xs-6">
+                                        <div class="inner-box">
+                                            <div class="graph-outer">
+                                                <input type="text" class="dial" data-fgColor="#ff5e7e" data-bgColor="#f5f5f5" data-width="90" data-height="90" data-linecap="normal"  value="70">
+                                                <div class="inner-text count-box"><span class="count-text" data-stop="70" data-speed="2000"></span>%</div>
+                                            </div>
+                                            <h3>DIY</h3>
+                                        </div>
+                                    </div>
+
+                                    <!-- 百分比3 -->
+                                    <div class="skill-block col-md-3 col-sm-4 col-xs-6">
+                                        <div class="inner-box">
+                                            <div class="graph-outer">
+                                                <input type="text" class="dial" data-fgColor="#00BFFF" data-bgColor="#f5f5f5" data-width="90" data-height="90" data-linecap="normal"  value="60">
+                                                <div class="inner-text count-box"><span class="count-text" data-stop="60" data-speed="2000"></span>%</div>
+                                            </div>
+                                            <h3>python</h3>
+                                        </div>
+                                    </div>
+									
+									<!-- 百分比4 -->
+									<div class="skill-block col-md-3 col-sm-4 col-xs-6">
+                                        <div class="inner-box">
+                                            <div class="graph-outer">
+                                                <input type="text" class="dial" data-fgColor="#ADFF2F" data-bgColor="#f5f5f5" data-width="90" data-height="90" data-linecap="normal"  value="40">
+                                                <div class="inner-text count-box"><span class="count-text" data-stop="40" data-speed="2000"></span>%</div>
+                                            </div>
+                                            <h3>C语言/C++</h3>
+                                        </div>
+                                    </div>
+									
+									
+									<!-- 百分比5 -->
+									<div class="skill-block col-md-3 col-sm-4 col-xs-6">
+                                        <div class="inner-box">
+                                            <div class="graph-outer">
+                                                <input type="text" class="dial" data-fgColor="#EE82EE" data-bgColor="#f5f5f5" data-width="90" data-height="90" data-linecap="normal"  value="50">
+                                                <div class="inner-text count-box"><span class="count-text" data-stop="50" data-speed="2000"></span>%</div>
+                                            </div>
+                                            <h3>电路设计</h3>
+                                        </div>
+                                    </div>
+									
+									<!-- 百分比6 -->
+									<div class="skill-block col-md-3 col-sm-4 col-xs-6">
+                                        <div class="inner-box">
+                                            <div class="graph-outer">
+                                                <input type="text" class="dial" data-fgColor="#808080" data-bgColor="#f5f5f5" data-width="90" data-height="90" data-linecap="normal"  value="75">
+                                                <div class="inner-text count-box"><span class="count-text" data-stop="75" data-speed="2000"></span>%</div>
+                                            </div>
+                                            <h3>运动</h3>
+                                        </div>
+                                    </div>
+									
+									<!-- 百分比7 -->
+									<div class="skill-block col-md-3 col-sm-4 col-xs-6">
+                                        <div class="inner-box">
+                                            <div class="graph-outer">
+                                                <input type="text" class="dial" data-fgColor="#ffc713" data-bgColor="#f5f5f5" data-width="90" data-height="90" data-linecap="normal"  value="85">
+                                                <div class="inner-text count-box"><span class="count-text" data-stop="85" data-speed="2000"></span>%</div>
+                                            </div>
+                                            <h3>赛车</h3>
+                                        </div>
+                                    </div>
+									
+                                    <!-- 百分比8 -->
+                                    <div class="skill-block col-md-3 col-sm-4 col-xs-6">
+                                        <div class="inner-box">
+                                            <div class="graph-outer">
+                                                <input type="text" class="dial" data-fgColor="#51dbc3" data-bgColor="#f5f5f5" data-width="90" data-height="90" data-linecap="normal"  value="75">
+                                                <div class="inner-text count-box"><span class="count-text" data-stop="75" data-speed="2000"></span>%</div>
+                                            </div>
+                                            <h3>机械设计</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                        
+                            </div>
+                        </div>
+                        <!-- end item -->
+
+                        <!-- card item --><!--履历-->
+                        <div class="card-resume card-item" id="resume" style="background-image:url(images/background/2.jpg)">
+                            <div class="card-inner">
+                                <h4 class="title">履历</h4><!--标题-->
+                                <div class="row clearfix">
+                                    <!--Column-->
+                                    <div class="timeline-column col-md-6 col-sm-12 col-xs-12">
+                                        <div class="inner">
+                                            <div class="col-header"><div class="icon-box"><div class="icon-inner"><div class="icon"><span class="flaticon-book"></span></div></div></div> <h2>学习</h2></div>
+                                            
+                                            <!--Timeline Block--><!--时间线1-->
+                                            <div class="timeline-block">
+                                                <div class="inner-box">
+                                                    <h4>城阳第八中学</h4>
+                                                    <div class="date"><span>2016-2019</span>/初中学习阶段</div>
+                                                    <div class="text">在初中时期开始了我的程序设计以及运动。</div>
+                                                </div>
+                                            </div>
+
+                                            <!--Timeline Block--><!--时间线2-->
+                                            <div class="timeline-block">
+                                                <div class="inner-box">
+                                                    <h4>青岛市城阳第一高级中学</h4>
+                                                    <div class="date"><span>2019-2022</span> /中学学习阶段</div>
+                                                    <div class="text">在这里，我掌握了不少的技能，并带着遗憾步入大学。</div>
+                                                </div>
+                                            </div>
+
+                                            <!--Timeline Block--><!--时间线3-->
+                                            <div class="timeline-block">
+                                                <div class="inner-box">
+                                                    <h4>山东交通学院</h4>
+                                                    <div class="date"><span>2022-未完待续</span> /大学阶段</div>
+                                                    <div class="text">大学，就应该向着更深的探索，并积极接触新事物。</div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <!--Column-->
+                                    <div class="timeline-column col-md-6 col-sm-12 col-xs-12">
+                                        <div class="inner">
+                                            <div class="col-header"><div class="icon-box"><div class="icon-inner"><div class="icon"><span class="flaticon-case"></span></div></div></div> <h2>工作</h2></div>
+                                            
+                                            <!--Timeline Block--><!--工作时间线-->
+                                            <div class="timeline-block">
+                                                <div class="inner-box">
+                                                    <h4>山东交通学院风翼车队</h4>
+                                                    <div class="date"><span>2022至今</span>  / 电控 and 车手</div>
+                                                    <div class="text">我相信车队的经历会给我带来各个方面的成长 </div>
+                                                </div>
+                                            </div>
+											<!--
+                                            <div class="timeline-block">
+                                                <div class="inner-box">
+                                                    <h4>Senior UI/UX Designer</h4>
+                                                    <div class="date"><span>2012-2014 </span> / Facebook inc.</div>
+                                                    <div class="text">Exceptur sint occaecat cupidatat non proident sunt culpa. </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="timeline-block">
+                                                <div class="inner-box">
+                                                    <h4>Junior UI/UX Designer</h4>
+                                                    <div class="date"><span>2006-2011 </span>  / airbnb inc.</div>
+                                                    <div class="text">Exceptur sint occaecat cupidatat non proident sunt culpa. </div>
+                                                </div>
+                                            </div>
+											-->
+
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+						
+                        <!-- card item --><!--掌握的技能-->
+                        <div class="card-services card-item" id="services" style="background-image:url(images/background/2.jpg)">
+                            <div class="card-inner">
+                                <h4 class="title">技能</h4>
+                                <div class="row">
+                                    <div class="services-block col-md-6">
+                                        <div class="inner-box">
+                                            <div class="icon-box"><span class="icon flaticon-pen-tool"></span></div>
+                                            <h4><a href="blog-single.html">电路设计</a></h4>
+                                            <div class="text">虽然现在不能搞一些原创，但是开源项目还是能玩一玩的</div>
+                                        </div> 
+                                    </div>
+                                    <div class="services-block col-md-6">
+                                        <div class="inner-box">
+                                            <div class="icon-box"><span class="icon flaticon-folder"></span></div>
+                                            <h4><a href="blog-single.html">网页设计</a></h4>
+                                            <div class="text">前端工作，懂得都懂，js差一点</div>
+                                        </div> 
+                                    </div>
+                                    <div class="services-block col-md-6">
+                                        <div class="inner-box">
+                                            <div class="icon-box"><span class="icon flaticon-computer"></span></div>
+                                            <h4><a href="blog-single.html">赛车设计驾驶</a></h4>
+                                            <div class="text">不会造车的车手我猜不是一个好车手</div>
+                                        </div> 
+                                    </div>
+                                    <div class="services-block col-md-6">
+                                        <div class="inner-box">
+                                            <div class="icon-box"><span class="icon flaticon-layers-1"></span></div>
+                                            <h4><a href="blog-single.html">动手diy</a></h4>
+                                            <div class="text">不妨想一下我掌握多少工具的使用</div>
+                                        </div> 
+                                    </div>
+                                    <div class="services-block col-md-6">
+                                        <div class="inner-box">
+                                            <div class="icon-box"><span class="icon flaticon-web-design"></span></div>
+                                            <h4><a href="blog-single.html">机械设计</a></h4>
+                                            <div class="text">本职工作不能丢是吧 </div>
+                                        </div> 
+                                    </div>
+                                    <div class="services-block col-md-6">
+                                        <div class="inner-box">
+                                            <div class="icon-box"><span class="icon flaticon-photo-camera"></span></div>
+                                            <h4><a href="blog-single.html">运动旅行</a></h4>
+                                            <div class="text">喜欢旅行和运动的挥洒汗水</div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+						
+                        <!-- card item --><!--工作日常-->
+                        <div class="card-projects card-item" id="work" style="background-image:url(images/background/2.jpg)">
+                            <div class="card-inner">
+                                <h4 class="title">工作日常</h4>
+                                <div class="row">
+                                    <div class="projects-block col-md-6">
+                                        <div class="inner-box">
+                                            <figure class="image">
+                                                <img src="images/gallery/1.jpg" alt="image">
+                                                <div class="overlay">
+                                                    <a class="lightbox-image option-btn" title="Image Caption Here" data-fancybox-group="example-gallery" href="images/gallery/1.jpg">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>                                
+                                                </div>
+                                            </figure>
+                                            <div class="caption-title">
+                                                <h3><a href="#">DIY充电宝</a></h3>
+                                                <span>电路设计</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="projects-block col-md-6">
+                                        <div class="inner-box">
+                                            <figure class="image">
+                                                <img src="images/gallery/2.jpg" alt="image">
+                                                <div class="overlay">
+                                                    <a class="lightbox-image option-btn" title="Image Caption Here" data-fancybox-group="example-gallery" href="images/gallery/2.jpg">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>                                
+                                                </div>
+                                            </figure>
+                                            <div class="caption-title">
+                                                <h3><a href="#">笔记本改装</a></h3>
+                                                <span>DIY拉满</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="projects-block col-md-6">
+                                        <div class="inner-box">
+                                            <figure class="image">
+                                                <img src="images/gallery/3.jpg" alt="image">
+                                                <div class="overlay">
+                                                    <a class="lightbox-image option-btn" title="Image Caption Here" data-fancybox-group="example-gallery" href="images/gallery/3.jpg">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>                                
+                                                </div>
+                                            </figure>
+                                            <div class="caption-title">
+                                                <h3><a href="#">Solid Works建模</a></h3>
+                                                <span>机械设计</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="projects-block col-md-6">
+                                        <div class="inner-box">
+                                            <figure class="image">
+                                                <img src="images/gallery/4.jpg" alt="image">
+                                                <div class="overlay">
+                                                    <a class="lightbox-image option-btn" title="Image Caption Here" data-fancybox-group="example-gallery" href="images/gallery/4.jpg">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>                                
+                                                </div>
+                                            </figure>
+                                            <div class="caption-title">
+                                                <h3><a href="#">赛道狂飙</a></h3>
+                                                <span>驾驶</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="projects-block col-sm-6">
+                                        <div class="inner-box">
+                                            <figure class="image">
+                                                <img src="images/gallery/5.jpg" alt="image">
+                                                <div class="overlay">
+                                                    <a class="lightbox-image option-btn" title="Image Caption Here" data-fancybox-group="example-gallery" href="images/gallery/5.jpg">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>                                
+                                                </div>
+                                            </figure>
+                                            <div class="caption-title">
+                                                <h3><a href="#">半程马拉松</a></h3>
+                                                <span>运动日常</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="projects-block col-sm-6">
+                                        <div class="inner-box">
+                                            <figure class="image">
+                                                <img src="images/gallery/6.png" alt="image">
+                                                <div class="overlay">
+                                                    <a class="lightbox-image option-btn" title="Image Caption Here" data-fancybox-group="example-gallery" href="images/gallery/6.png">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>                                
+                                                </div>
+                                            </figure>
+                                            <div class="caption-title">
+                                                <h3><a href="#">车队网站建设</a></h3>
+                                                <span>Web前端</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+						
+                        <!-- card item --><!--博客部分-->
+                        <div class="card-blog card-item" id="blog" style="background-image:url(images/background/2.jpg)">
+                            <div class="card-inner">
+                                <h4 class="title"><br>博客(心情)</h4>
+								
+								<!--博客-->
+                                <div class="news-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <img src="images/resource/blog-3.jpg" alt="" width="700" height="300">
+                                            <div class="overlay">
+                                                <a class="link-btn" href="blog/blog3.html">
+                                                    <i class="fa fa-link"></i>
+                                                </a>                                
+                                            </div>
+                                        </div>
+                                        <div class="date"><strong>05.20</strong> <br>2023</div>
+                                        <div class="lower-content">
+                                            <h4><a href="blog/blog3.html">总要感慨一番不是吗</a></h4>
+                                            <div class="post-meta">by XLR  /  <span>Design</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+								
+								<!--博客-->
+                                <div class="news-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <img src="images/resource/blog-2.jpg" alt="" width="700" height="300">
+                                            <div class="overlay">
+                                                <a class="link-btn" href="blog/blog2.html">
+                                                    <i class="fa fa-link"></i>
+                                                </a>                                
+                                            </div>
+                                        </div>
+                                        <div class="date"><strong>09.01</strong> <br>2022</div>
+                                        <div class="lower-content">
+                                            <h4><a href="blog/blog2.html"></a>生如逆旅 一苇以航</h4>
+                                            <div class="post-meta">by XLR  /  <span>Design</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+								
+								<!--博客-->
+                                <div class="news-block">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <img src="images/resource/blog-1.jpg" alt="" width="700" height="300">
+                                            <div class="overlay">
+                                                <a class="link-btn" href="blog/blog1.html">
+                                                    <i class="fa fa-link"></i>
+                                                </a>                                
+                                            </div>
+                                        </div>
+                                        <div class="date"><strong>06.10</strong> <br>2022</div>
+                                        <div class="lower-content">
+                                            <h4><a href="blog/blog1.html">致敬那转瞬即逝的时光</a></h4>
+                                            <div class="post-meta">by XLR  /  <span>Design</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+								
+                            </div>
+                        </div>
+                        <!-- end item -->
+                        <!-- card item -->
+                        <div class="card-contact card-item" id="contact" style="background-image:url(images/background/2.jpg)">
+                            <div class="card-inner">
+                                <h3 class="title"><br>与我联系</h3>
+                                <h4>保持联系哦</h4>
+                                <div class="row clearfix">
+                                    <div class="col-md-6">
+                                        <ul class="list-style-two">
+                                            <li><span class="icon flaticon-signs"></span>海棠路5001号<br>山东省济南市长清区</li>
+											<li><span class="icon flaticon-signs"></span>Home<br>山东省青岛市城阳区</li>
+                                            <li><span class="icon flaticon-smartphone"></span>+86 15964207081<br><!--此处可以再加一个电话--></li>
+                                            <li><span class="icon flaticon-note-1"></span>xlinrui2004@163.com<br>2251153348@qq.com</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="map-section">
+                                            <div class="home-google-map">
+                                                <div 
+                                                    class="google-map" 
+                                                    id="contact-google-map" 
+                                                    data-map-lat="40.700843" 
+                                                    data-map-lng="-74.004012" 
+                                                    data-icon-path="images/icons/map-marker.png"
+                                                    data-map-title="Chester"
+                                                    data-map-zoom="11" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>我能做些什么</h4>
+									<p>唯一能做的当然是填个表啦（目前正在开发中）</p>
+                                <!-- 联系填表 -->
+                                <div class="contact-form">
+                                    <!--Comment Form-->
+                                    <form method="post" action="sendemail.php" id="contact-form">
+                                        <div class="row clearfix">
+                                            
+                                            <div class="col-md-6 form-group">
+                                                <input type="text" name="username" placeholder="姓名" required>
+                                            </div>
+                                            
+                                            <div class="col-md-6 form-group">
+                                                <input type="email" name="email" placeholder="邮箱" required>
+                                            </div>
+                                            
+                                            <!--<div class="col-md-6 form-group">
+                                                <input type="text" name="subject" placeholder="领域" required>
+                                            </div>暂时去掉看看-->
+
+                                            <div class="col-md-6 form-group">
+                                                <input type="text" name="phone" placeholder="联系电话" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 form-group">
+                                                <textarea name="message" placeholder="要给我发送的消息"></textarea>
+                                            </div>
+                                            
+                                            <div class="col-lg-12 col-md-12 form-group">
+                                                <button class="theme-btn btn-style-two" type="submit" name="submit-form">立即发送</button>
+                                            </div>
+                                            
+                                        </div>
+                                    </form>
+                                        
+                                </div>
+                                <!--End Contact Form -->
+                                        
+                            </div>
+                        </div>
+                        <!-- end item -->
+
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+            
+    </div>
+
+</div>
+<!--End pagewrapper-->
+
+
+<script src="js/jquery.js"></script> 
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/element-in-view.js"></script>
+<script src="js/knob.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/mousemoveparallax.js"></script>
+<script src="js/pagenav.js"></script>
+<script src="js/jquery-type.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/particle-alone.js"></script>
+<script src="js/script.js"></script>
+
+<!--Google Map APi Key-->
+<script src="http://ditu.google.cn/maps/api/js?key=AIzaSyATY4Rxc8jNvDpsK8ZetC7JyN4PFVYGCGM"></script>
+<script src="js/gmaps.js"></script>
+<script src="js/map-script.js"></script>
+<!--End Google Map APi-->
+
+</body>
+</html>
+
