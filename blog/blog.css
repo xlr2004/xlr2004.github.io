@@ -1,0 +1,54 @@
+@charset "utf-8";
+body{
+			font:14px/24px "宋体";
+					color:#000;}
+	 h1{
+		font:normal 30px/40px  "微软雅黑";
+	   color:#000000;
+	   text-align:center;
+	   }
+
+	.one{
+		font-szie:12px;
+	    text-align:center;
+		}
+
+	p{
+		text-indent:2em;
+	 }
+
+	.blue{
+		color:#3d6cb0;
+	}
+
+	.gray{
+		color:#666;
+	}
+
+	#num{
+		color:#3d6cb0;
+	}
+
+	em{ 
+		font-style:normal;
+	}
+
+	.two{
+		font-family:"楷体_GB2312";
+		font-size: 20px;
+	}
+
+	.four{
+		font-weight:bold;
+		font-size: 20px;
+	}
+
+.box{
+	width: auto;
+}
+
+.box-in{
+	margin-left:10%;
+	margin-right: 10%;
+}
+
